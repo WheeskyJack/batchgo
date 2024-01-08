@@ -1,0 +1,5 @@
+github.com/WheeskyJack/batchgo v0.1.0 h1:3w/AsdIIx/5kpd2diANwaKgT1u79ZvBI4hHtSMnI1bs=
+github.com/WheeskyJack/batchgo v0.1.0/go.mod h1:JDoRgpfvr50EKMuo45V/MzNG8UCiNtwyXAQHK3fZzQE=
+github.com/benbjohnson/clock v1.3.5 h1:VvXlSJBzZpA/zum6Sj74hxwYI2DIxRWuNIoXAzHZz5o=
+github.com/benbjohnson/clock v1.3.5/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
+github.com/golang/mock v1.6.0 h1:ErTB+efbowRARo13NNdxyJji2egdxLGQhRaY+DUumQc=
