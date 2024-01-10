@@ -73,6 +73,7 @@ func WithReqBufferSize(size int) Option {
 	}
 }
 
+// New creates new batcher.
 func New(size int, timeout time.Duration, createSlice func() Slicer, opts ...Option) (*Batch, error) {
 	if timeout <= 0 {
 		return nil, fmt.Errorf("timeout must be greater than 0")
@@ -99,6 +100,7 @@ func New(size int, timeout time.Duration, createSlice func() Slicer, opts ...Opt
 }
 
 // Add puts up the item for merging and is async merge operation.
+// this is concurrency-safe call.
 func (b *Batch) Add(ctx context.Context, item interface{}) error {
 	if !b.IsRunning() {
 		return fmt.Errorf("batcher is not running")
