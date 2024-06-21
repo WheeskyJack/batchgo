@@ -1,0 +1,32 @@
+run:
+  timeout: 5m
+  skip-dirs:
+    - vendor
+
+linters:
+  enable:
+    - cyclop
+    - errcheck
+    - gocyclo
+    - gofmt
+    - goimports
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+
+linters-settings:
+  cyclop:
+    # The maximal code complexity to report.
+    # Default: 10
+    max-complexity: 20
+    # The maximal average package complexity.
+    # If it's higher than 0.0 (float) the check is enabled
+    # Default: 0.0
+    package-average: 6.0
+    # Should ignore tests.
+    # Default: false
+    skip-tests: false
+  gocyclo:
+    min-complexity: 20
