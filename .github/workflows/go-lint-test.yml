@@ -16,7 +16,8 @@ permissions:
   # pull-requests: read
 
 jobs:
-  Lint:
-    uses: WheeskyJack/cicd-includes/.github/workflows/go_test.yml@v0.0.1
-  Test:
+  Lint-App:
     uses: WheeskyJack/cicd-includes/.github/workflows/golangci-lint.yml@v0.0.1 
+  Test-App:
+    uses: WheeskyJack/cicd-includes/.github/workflows/go_test.yml@v0.0.1
+
