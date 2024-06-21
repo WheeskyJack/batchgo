@@ -1,0 +1,22 @@
+name: golang lint and test
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: read
+  # Optional: allow read access to pull request. Use with `only-new-issues` option.
+  # pull-requests: read
+
+jobs:
+  Lint:
+    uses: WheeskyJack/cicd-includes/.github/workflows/go_test.yml@v0.0.1
+  Test:
+    uses: WheeskyJack/cicd-includes/.github/workflows/go_test.yml@v0.0.1
