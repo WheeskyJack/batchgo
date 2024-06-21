@@ -19,4 +19,4 @@ jobs:
   Lint:
     uses: WheeskyJack/cicd-includes/.github/workflows/go_test.yml@v0.0.1
   Test:
-    uses: WheeskyJack/cicd-includes/.github/workflows/go_test.yml@v0.0.1
+    uses: WheeskyJack/cicd-includes/.github/workflows/golangci-lint.yml@v0.0.1 
